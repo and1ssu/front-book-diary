@@ -75,13 +75,14 @@ export function BookList() {
               <TableCell>Gênero</TableCell>
               <TableCell>Status</TableCell>
               <TableCell>Avaliação</TableCell>
+              <TableCell>Nota</TableCell>
               <TableCell align="right">Ações</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
             {books.length === 0 ? (
               <TableRow>
-                <TableCell colSpan={6} align="center">
+                <TableCell colSpan={7} align="center">
                   <Typography variant="body1" sx={styles.emptyState}>
                     Nenhum livro cadastrado
                   </Typography>
@@ -100,6 +101,19 @@ export function BookList() {
                       readOnly
                       precision={0.5}
                     />
+                  </TableCell>
+                  <TableCell>
+                    <Typography
+                      variant="body2"
+                      sx={{
+                        maxWidth: 200,
+                        overflow: 'hidden',
+                        textOverflow: 'ellipsis',
+                        whiteSpace: 'nowrap',
+                      }}
+                    >
+                      {book.notes || '-'}
+                    </Typography>
                   </TableCell>
                   <TableCell align="right">
                     <IconButton

@@ -5,6 +5,7 @@ export interface Book {
   genre: string;
   status: string;
   rating: number;
+  notes: string;
   createdAt: string;
   updatedAt: string;
 }

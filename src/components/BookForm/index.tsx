@@ -33,6 +33,7 @@ export function BookForm() {
     genre: '',
     status: '',
     rating: 0,
+    notes: '',
   });
   const [options, setOptions] = useState<BookOptions>({
     genres: [],
@@ -157,6 +158,16 @@ export function BookForm() {
             precision={0.5}
           />
         </Box>
+        <TextField
+          fullWidth
+          multiline
+          rows={4}
+          label="Nota"
+          name="notes"
+          value={book.notes}
+          onChange={handleChange}
+          placeholder="Adicione uma breve nota sobre o livro..."
+        />
         <Button
           type="submit"
           fullWidth
