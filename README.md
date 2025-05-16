@@ -25,7 +25,7 @@ Book Diary é uma aplicação web moderna para gerenciar sua coleção de livros
 
 1. Clone o repositório:
 ```bash
-git clone [URL_DO_REPOSITÓRIO]
+git clone  https://github.com/and1ssu/front-book-diary.git
 ```
 
 2. Instale as dependências:
